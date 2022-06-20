@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 
+import logo from './logo.svg';
+
 // components
 import StartScreen from "./components/StartScreen";
 import Game from "./components/Game";
@@ -142,6 +144,9 @@ function App() {
 
   return (
     <div className="App">
+      <header className="App-header">
+      <img src={logo} className="App-logo" alt="logo" width="10%"/>
+      </header>
       {gameStage === "start" && <StartScreen startGame={startGame} />}
       {gameStage === "game" && (
         <Game
@@ -156,6 +161,7 @@ function App() {
         />
       )}
       {gameStage === "end" && <GameOver retry={retry} score={score} />}
+     
     </div>
   );
 }
