@@ -28,6 +28,7 @@ const Game = ({
 
   return (
     <div className="game">
+    
       <p className="points">
         <span>Pontuação</span>: {score}
       </p>
@@ -50,6 +51,7 @@ const Game = ({
       <div className="letterContainer">
 
         <form onSubmit={handleSubmit}>
+          <div>
         <label>Tente adivnhar uma letra da palavra:</label>
           <input
             type="text"
@@ -60,15 +62,18 @@ const Game = ({
             value={letter}
             ref={letterInputRef}
           />
-        
+          </div>
+         <button>Jogar!</button>
         </form>
-        <button>Jogar!</button>
+        
       </div>
       <div className="wrongLettersContainer">
+        <div className="wrongLettersContainer2">
         <p>Letras já utilizadas:</p>
         {wrongLetters.map((letter, i) => (
           <span key={i}>{letter}, </span>
         ))}
+        </div>
       </div>
     </div>
   );

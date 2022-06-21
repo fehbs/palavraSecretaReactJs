@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 
-import logo from './logo.svg';
+
 
 // components
 import StartScreen from "./components/StartScreen";
@@ -144,10 +144,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" width="10%"/>
-      
+       <header className="App-header">
       {gameStage === "start" && <StartScreen startGame={startGame} />}
+
       {gameStage === "game" && (
         <Game
           verifyLetter={verifyLetter}
