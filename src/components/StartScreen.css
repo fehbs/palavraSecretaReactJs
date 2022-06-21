@@ -1,3 +1,9 @@
 .start h1{
  color: #61dafb;
+ font-size: 3.5em;
+}
+
+.start p {
+  color: #61dafb;
+  margin-bottom: 2em;
 }

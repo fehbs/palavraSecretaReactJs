@@ -48,8 +48,9 @@ const Game = ({
         )}
       </div>
       <div className="letterContainer">
-        <p>Tente adivnhar uma letra da palavra:</p>
+
         <form onSubmit={handleSubmit}>
+        <label>Tente adivnhar uma letra da palavra:</label>
           <input
             type="text"
             name="letter"
@@ -59,8 +60,9 @@ const Game = ({
             value={letter}
             ref={letterInputRef}
           />
-          <button>Jogar!</button>
+        
         </form>
+        <button>Jogar!</button>
       </div>
       <div className="wrongLettersContainer">
         <p>Letras já utilizadas:</p>

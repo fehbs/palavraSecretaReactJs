@@ -146,7 +146,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" width="10%"/>
-      </header>
+      
       {gameStage === "start" && <StartScreen startGame={startGame} />}
       {gameStage === "game" && (
         <Game
@@ -161,7 +161,7 @@ function App() {
         />
       )}
       {gameStage === "end" && <GameOver retry={retry} score={score} />}
-     
+      </header>
     </div>
   );
 }
