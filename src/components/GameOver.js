@@ -1,13 +1,17 @@
 import "./GameOver.css";
 
+import { GiPlayButton, GiArrowWings} from "react-icons/gi";
+
+import { BsToggleOff } from "react-icons/bs";
+
 const GameOver = ({ retry, score }) => {
   return (
     <div className="gameover">
-      <h1>Fim de jogo!</h1>
+      <h1>Fim de jogo!< BsToggleOff /></h1>
       <h2>
-        A sua pontuação foi: <span>{score}</span>!
+       <GiArrowWings/> A sua pontuação foi: <span>{score}</span>!
       </h2>
-      <button onClick={retry}>Reiniciar</button>
+      <button onClick={retry}>Reiniciar<GiPlayButton/></button>
     </div>
   );
 };

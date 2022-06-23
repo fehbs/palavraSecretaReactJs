@@ -1,5 +1,7 @@
 import { useState, useRef } from "react";
 
+import { GiPlayButton, GiSecretBook, GiPointing, GiRead, GiBowman } from "react-icons/gi";
+
 // styles
 import "./Game.css";
 
@@ -30,13 +32,13 @@ const Game = ({
     <div className="game">
     
       <p className="points">
-        <span>Pontuação</span>: {score}
+        <span>< GiPointing />Pontuação</span>: {score}
       </p>
-      <h1>Advinhe a palavra:</h1>
-      <h3 className="tip">
+      <h1><GiSecretBook/>Advinhe a palavra:</h1>
+      <h3 className="tip"><GiRead/>
         Dica sobre a palavra: <span>{pickedCategory}</span>
       </h3>
-      <p>Você ainda tem {guesses} tentativa(s).</p>
+      <p><GiBowman/>Você ainda tem {guesses} tentativa(s).</p>
       <div className="wordContainer">
         {letters.map((letter, i) =>
           guessedLetters.includes(letter) ? (
@@ -63,7 +65,7 @@ const Game = ({
             ref={letterInputRef}
           />
           </div>
-         <button>Jogar!</button>
+         <button>Jogar! <GiPlayButton/></button>
         </form>
         
       </div>
