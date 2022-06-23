@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 
-import { GiPlayButton, GiSecretBook, GiPointing, GiRead, GiBowman } from "react-icons/gi";
+import {  GiPlayButton, GiSecretBook, GiPointing, GiRead, GiBowman } from "react-icons/gi";
 
 // styles
 import "./Game.css";
