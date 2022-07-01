@@ -24,7 +24,14 @@ button {
   transition: 2s;
   margin-top: 0.5em;
   border-radius: 0.4em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
+
+
 
 button:hover {
   background-color: #61dafb;

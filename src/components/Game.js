@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 
-import {  GiPlayButton, GiSecretBook, GiPointing, GiRead, GiBowman } from "react-icons/gi";
+import { GiPlayButton, GiSecretBook, GiPointing, GiRead, GiBowman } from "react-icons/gi";
 
 // styles
 import "./Game.css";
@@ -65,7 +65,7 @@ const Game = ({
             ref={letterInputRef}
           />
           </div>
-         <button>Jogar! <GiPlayButton/></button>
+         <button><GiPlayButton/>Jogar</button>
         </form>
         
       </div>
