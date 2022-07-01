@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+.btnS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 button {
   width: 42%;
   height: 8vh;
@@ -24,7 +30,6 @@ button {
   transition: 2s;
   margin-top: 0.5em;
   border-radius: 0.4em;
-
   display: flex;
   align-items: center;
   justify-content: center;

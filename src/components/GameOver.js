@@ -12,9 +12,11 @@ const GameOver = ({ retry, score }) => {
       </div>
       <h1>Fim de jogo!</h1>
       <h2>
-       <GiArrowWings/> A sua pontuação foi: <span>{score}</span>
+       <GiArrowWings/> A sua pontuação foi : <span>{score}</span>
       </h2>
+      <div className="btnS">
       <button onClick={retry}><GiPlayButton/>Reiniciar</button>
+      </div>
     </div>
   );
 };

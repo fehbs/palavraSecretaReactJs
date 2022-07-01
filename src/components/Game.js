@@ -32,11 +32,11 @@ const Game = ({
     <div className="game">
     
       <p className="points">
-        <span>< GiPointing />Pontuação</span>: {score}
+        <span>< GiPointing />Pontuação :</span>{score}
       </p>
-      <h1><GiSecretBook/>Adivinhe a palavra:</h1>
+      <h1><GiSecretBook/>Adivinhe a palavra :</h1>
       <h3 className="tip"><GiRead/>
-        Dica sobre a palavra: <span>{pickedCategory}</span>
+        Dica sobre a palavra :<span>{pickedCategory}</span>
       </h3>
       <p><GiBowman/>Você ainda tem {guesses} tentativa(s).</p>
       <div className="wordContainer">
@@ -54,7 +54,7 @@ const Game = ({
 
         <form onSubmit={handleSubmit}>
           <div>
-        <label>Tente adivinhar uma letra da palavra:</label>
+        <label>Tente adivinhar uma letra da palavra :</label>
           <input
             type="text"
             name="letter"
@@ -65,13 +65,15 @@ const Game = ({
             ref={letterInputRef}
           />
           </div>
+          
          <button><GiPlayButton/>Jogar</button>
+        
         </form>
         
       </div>
       <div className="wrongLettersContainer">
         <div className="wrongLettersContainer2">
-        <p>Letras já utilizadas:</p>
+        <p>Letras já utilizadas :</p>
         {wrongLetters.map((letter, i) => (
           <span key={i}>{letter}, </span>
         ))}
