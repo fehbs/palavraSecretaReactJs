@@ -34,7 +34,7 @@ const Game = ({
       <p className="points">
         <span>< GiPointing />Pontuação</span>: {score}
       </p>
-      <h1><GiSecretBook/>Advinhe a palavra:</h1>
+      <h1><GiSecretBook/>Adivinhe a palavra:</h1>
       <h3 className="tip"><GiRead/>
         Dica sobre a palavra: <span>{pickedCategory}</span>
       </h3>
@@ -54,7 +54,7 @@ const Game = ({
 
         <form onSubmit={handleSubmit}>
           <div>
-        <label>Tente adivnhar uma letra da palavra:</label>
+        <label>Tente adivinhar uma letra da palavra:</label>
           <input
             type="text"
             name="letter"
