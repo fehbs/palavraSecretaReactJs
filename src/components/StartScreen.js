@@ -1,15 +1,17 @@
 import './StartScreen.css';
 
+import LogoImg from './LogoImage';
+
 import { GiPlayButton } from "react-icons/gi";
 
-const StartScreen = ({startGame}) => {
+const StartScreen = ({ startGame }) => {
   return (
     <div className='start'>
-      <img src='./logo.png' className="logo" alt="logo" width="15%"/>
+      <LogoImg className='logoIcon' />
       <h1>Palavra Secreta</h1>
       <p>Clique no botão abaixo para começar a jogar </p>
       <div className="btnS">
-      <button onClick={startGame}><GiPlayButton size={40}/>Começar</button>
+        <button onClick={startGame}><GiPlayButton size={50} />Começar</button>
       </div>
     </div>
   )
