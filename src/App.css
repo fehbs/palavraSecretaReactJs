@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -15,7 +16,7 @@
 }
 
 .App-header {
-  background-color: hsla(0, 4%, 5%, 0.911);
+ /* background-color: hsla(0, 4%, 5%, 0.911);*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;
