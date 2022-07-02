@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 
-import { GiPlayButton, GiSecretBook, GiPointing, GiRead, GiBowman } from "react-icons/gi";
+import { GiPlayButton, GiSecretBook, GiRead, GiBowman } from "react-icons/gi";
+import { FaHandPointRight} from "react-icons/fa";
 
 // styles
 import "./Game.css";
@@ -32,13 +33,27 @@ const Game = ({
     <div className="game">
     
       <p className="points">
-        <span>< GiPointing />Pontuação :</span>{score}
+        <span><FaHandPointRight
+        color={'var(--colornode4)'}
+        />Pontuação :</span>{score}
       </p>
-      <h1><GiSecretBook/>Adivinhe a palavra :</h1>
-      <h3 className="tip"><GiRead/>
+      <h1><GiSecretBook color= {'var(--colornode4)'} />Adivinhe a palavra :</h1>
+
+      <h3 className="tip">
+        <GiRead 
+        color= {'var(--colornode4)'}
+        size={35}
+        />
         Dica sobre a palavra :<span>{pickedCategory}</span>
       </h3>
-      <p><GiBowman/>Você ainda tem {guesses} tentativa(s).</p>
+
+      <p><GiBowman
+      color={'var(--colornode4)'} 
+      size={35}
+      />
+      Você ainda tem {guesses} tentativa(s).
+      </p>
+
       <div className="wordContainer">
         {letters.map((letter, i) =>
           guessedLetters.includes(letter) ? (
@@ -66,7 +81,7 @@ const Game = ({
           />
           </div>
           
-         <button><GiPlayButton/>Jogar</button>
+         <button><GiPlayButton size={50}/>Jogar</button>
         
         </form>
         

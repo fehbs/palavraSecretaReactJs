@@ -1,10 +1,22 @@
+
+.start {
+  width: 80%;
+  border-radius: 8px;
+  background-color: #090c15;
+  height: 85vh;
+}
+
+.start img {
+  margin-top: 38px;
+ }
+ 
 .start h1{
- color: #61dafb;
- font-size: 3.5em;
+ /*color: #61dafb;*/
+ font-size: 2.6em;
  margin-top: -2px;
 }
 
 .start p {
-  color: #61dafb;
+  color:  #84ba64;
   margin-bottom: 2em;
 }
