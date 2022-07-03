@@ -13,7 +13,7 @@ code {
     monospace;
 }
 
-:root{
+:root {
   --colornode1: #233056;
   --colornode2: #999;
   --colornode3: #090c15;
@@ -33,14 +33,14 @@ code {
 button {
   width: 130px;
   height: 11vh;
-  padding: 5px ;
+  padding: 5px;
   font-weight: 200;
   text-transform: uppercase;
   font-size: 0.8em;
   color: #ffffff;
   background-color: #026e00;
   cursor: pointer;
-  transition: 2s;
+  transition: 1s;
   margin-top: 0.5em;
   border-radius: 0.4em;
   border: none;
@@ -54,4 +54,10 @@ button {
 button:hover {
   color: var(--colornode7);
   background-color: var(--colornode5);
+}
+
+button:active {
+  color: var(--colornode7);
+  background-color: var(--colornode1);
+  transition: none;
 }

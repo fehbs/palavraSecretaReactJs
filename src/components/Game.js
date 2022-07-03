@@ -6,6 +6,7 @@ import { FaHandPointRight } from "react-icons/fa";
 import "./Game.css";
 
 const Game = ({
+
   verifyLetter,
   pickedCategory,
   pickedWord,
@@ -14,7 +15,9 @@ const Game = ({
   wrongLetters,
   guesses,
   score,
+
 }) => {
+
   const [letter, setLetter] = useState("");
   const letterInputRef = useRef(null);
 
@@ -29,6 +32,7 @@ const Game = ({
   };
 
   return (
+
     <div className="game">
 
       <p className="points">
@@ -74,6 +78,7 @@ const Game = ({
       <div className="letterContainer">
 
         <form onSubmit={handleSubmit}>
+
           <div>
             <label>Tente adivinhar uma letra da palavra :</label>
             <input

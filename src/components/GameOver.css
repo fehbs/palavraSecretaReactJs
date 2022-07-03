@@ -1,26 +1,27 @@
  .gameover {
-  width: 80%;
-  border-radius: 8px;
-  background-color: #090c15;
-  height: 85vh;
+   width: 80%;
+   border-radius: 8px;
+   background-color: #090c15;
+   height: 85vh;
  }
 
  .gameover h1 {
-  font-size: 2em;
+   font-size: 2em;
  }
- 
- h2, h2 span {
-  color: #ffffff;
-  font-size: 1.2em;
+
+ h2,
+ h2 span {
+   color: #ffffff;
+   font-size: 1.2em;
  }
 
  h2 {
-  color: #ffffff;
-  font-size: 1.2em;
-  margin-top: 0px;
+   color: #ffffff;
+   font-size: 1.2em;
+   margin-top: 0px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 7px;
  }

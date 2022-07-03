@@ -8,7 +8,7 @@
   width: 74%;
 }
 
-:root{
+:root {
   --colornode1: #233056;
   --colornode2: #999;
   --colornode3: #090c15;
@@ -35,7 +35,7 @@
   gap: 7px;
 }
 
- h3 {
+h3 {
   margin-top: 3px;
   font-size: 0.9em;
   display: flex;
@@ -44,7 +44,7 @@
   gap: 7px;
 }
 
- p {
+p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,4 +103,29 @@
   align-items: center;
   flex-direction: row;
   gap: 4px;
+}
+
+@media screen and (max-width: 540px) {
+  .game {
+    width: 85%;
+    margin: 14px auto;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+  .game {
+    max-width: 100%;
+    margin: 5px auto;
+    padding: 18px 18px;
+  }
+
+  .letterContainer input {
+    margin-top: 18px;
+  }
+
+  button {
+    margin-top: 18px;
+  }
+
 }
