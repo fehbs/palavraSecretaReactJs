@@ -116,13 +116,13 @@ function App() {
     console.log(uniqueLetters);
     console.log(guessedLetters);
 
-    if (guessedLetters.length === uniqueLetters.length) {
+    if (guessedLetters.length === uniqueLetters.length && gameStage === stages[1].name ) {
 
       setScore((actualScore) => (actualScore += 100));
 
       startGame();
     }
-  }, [guessedLetters, letters, startGame]);
+  }, [guessedLetters, letters, startGame, gameStage]);
 
   return (
 
@@ -131,9 +131,7 @@ function App() {
       <header className="App-header">
 
         {gameStage === "start" && <StartScreen startGame={startGame} />}
-
         {gameStage === "game" && (
-
           <Game
             verifyLetter={verifyLetter}
             pickedWord={pickedWord}
@@ -144,11 +142,8 @@ function App() {
             guesses={guesses}
             score={score}
           />
-
         )}
-
-        {gameStage === "end" &&
-          <GameOver retry={retry} score={score} />}
+        {gameStage === "end" && <GameOver retry={retry} score={score}/>}
 
       </header>
 

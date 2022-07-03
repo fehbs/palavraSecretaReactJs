@@ -32,34 +32,21 @@ const Game = ({
   };
 
   return (
-
     <div className="game">
 
       <p className="points">
-        <span><FaHandPointRight
-          color={'var(--colornode4)'}
+        <span><FaHandPointRight color={'var(--colornode4)'}
         />Pontuação :</span>{score}
       </p>
 
-      <h1>
-        <GiSecretBook
-          color={'var(--colornode4)'}
-        />Adivinhe a palavra :
-      </h1>
+      <h1><GiSecretBook color={'var(--colornode4)'} />Adivinhe a palavra :</h1>
 
-      <h3 className="tip">
-        <GiRead
-          color={'var(--colornode4)'}
-          size={35}
-        />
+      <h3 className="tip"><GiRead color={'var(--colornode4)'} size={35} />
         Dica sobre a palavra :<span>{pickedCategory}</span>
       </h3>
 
       <p>
-        <GiBowman
-          color={'var(--colornode4)'}
-          size={35}
-        />
+        <GiBowman color={'var(--colornode4)'} size={35} />
         Você ainda tem {guesses} tentativa(s).
       </p>
 
